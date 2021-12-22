@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "MYuppy"; 
+    src: url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.eot"); 
+    src: url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.woff") format("woff"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.svg#MYuppy-Bold-DDC") format("svg"); 
+}
+
+:root {
+    /*--nice-font: "Segoe UI", "Myuppy";*/
+    --nice-font: "Myuppy", "Segoe Print";
+}
+
 .theme-dark{
     background-position: 0% 90%;
     --bgcolor: #07053500;
@@ -12,6 +23,11 @@
     --interactive-accent: #b44949;
     --background-modifier-cover: rgb(0 0 0 / 70%);
     --text-highlight-bg: #c9e7aba3;
+}
+
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+    font-family: var(--nice-font);
 }
 
 .cm-math, .span.cm-formatting-math{
@@ -152,6 +168,22 @@ img {
     background-color: #404f7db5;
 }
 
+/*collapse icon*/
+.collapse-icon {
+    color: #ffb3b39e;
+}
+
+/*liver preview line number*/
+.markdown-source-view.mod-cm6 .cm-gutters {
+    color: transparent !important;
+    transition: all 200ms ease;
+}
+
+.markdown-source-view.mod-cm6 .cm-gutters:hover {
+    color: #ffe6f0e0 !important;
+}
+
+
 /*edit mode line number*/
 .CodeMirror-linenumber {
     color: #ffc5c500 !important;
@@ -175,8 +207,6 @@ div:not(.CodeMirror-activeline)>.HyperMD-quote, blockquote {
     border: 0px solid var(--background-modifier-border) !important;
     border-left: 3px solid #989fded1 !important;
 }
-
-
 /*link*/
     /*external link*/
         .cm-url{
@@ -188,7 +218,7 @@ div:not(.CodeMirror-activeline)>.HyperMD-quote, blockquote {
             text-decoration: underline !important;
         }
     /*internal link*/
-        .theme-dark a, .cm-s-obsidian span.cm-hmd-internal-link {
+        .theme-dark a, .cm-s-obsidian span.cm-hmd-internal-link, span.cm-link {
             color: #89c0fb !important;
             text-decoration: none !important;
             transition: color ease-out 150ms;
@@ -217,10 +247,10 @@ body{
 
 body {
     /*font-family: "Baloo Paaji 2", Myuppy;*/
-    font-family: Myuppy;
+    font-family: var(--nice-font);
 }
 .markdown-preview-view blockquote {
-    font-family: "Baloo Paaji 2", Myuppy;    
+    font-family: var(--nice-font);    
 }
 .status-bar {
     background-color: #230101b8;

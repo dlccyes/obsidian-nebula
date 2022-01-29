@@ -239,11 +239,23 @@ body{
 .theme-dark ol > li {
     color: var(--text-normal) !important;
 }
-.menu, .popover, .suggestion-container {
-    background-color: #2a0404dd !important;
-    border-radius: 20px;
-    border: 1px solid #79531a;
-}
+
+/* popover */
+    .menu, .popover, .suggestion-container {
+        background-color: #150b55d6 !important;
+        border-radius: 20px;
+        border: 1px solid #5050c0;
+    }
+    /* selection */
+    .qe-popup-menu .menu-item:not(.is-disabled):not(.is-label).selected {
+        background-color: #904356f7;
+        border-radius: 10px;
+    }
+    /* right click selection */
+    .menu-item.selected:not(.is-disabled):not(.is-label) {
+        background-color: #904356f7;
+        border-radius: 10px;
+    }
 
 body {
     /*font-family: "Baloo Paaji 2", Myuppy;*/

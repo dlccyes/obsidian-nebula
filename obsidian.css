@@ -7,6 +7,7 @@
 :root {
     /*--nice-font: "Segoe UI", "Myuppy";*/
     --nice-font: "Myuppy", "Segoe Print";
+    --mono-font: "Source Code Pro", "Consolas";
 }
 
 .theme-dark{
@@ -16,7 +17,7 @@
     --background-primary-alt: #06094059;
     --background-secondary: var(--bgcolor);
     --background-secondary-alt: #06094059;
-    --text-selection: #97a5f954; 
+    --text-selection: #f997f154; 
     --text-highlight-bg: var(--text-selection); /* search highlight */
     --text-normal: #ffffffdd;
     --text-muted: #efd1d1;
@@ -32,7 +33,7 @@
 
 .cm-math, .span.cm-formatting-math{
     color: var(--text-normal) !important;
-    font-family: Consolas;
+    font-family: var(--mono-font);
 }
 
 /*left sidebar*/
@@ -298,16 +299,16 @@ body {
 .markdown-preview-section pre code, .markdown-preview-section code {
     font-size: 0.9em !important;
     /*background-color: #372611 !important;*/
-    font-family: Consolas, Myuppy !important;
+    font-family: var(--mono-font), Myuppy !important;
 }
 
 /* inline code edit */
 .cm-s-obsidian span.cm-inline-code {
-    font-family: Consolas, Myuppy !important;
+    font-family: var(--mono-font), Myuppy !important;
 }
 /* codeblock edit */
 .cm-s-obsidian .HyperMD-codeblock, .markdown-preview-view code, .cm-s-obsidian .cm-inline-code {
-    font-family: 'Consolas' !important;
+    font-family: var(--mono-font) !important;
 }
 /* image tool tip scale percent number */
 .img-tip {

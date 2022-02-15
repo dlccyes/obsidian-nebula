@@ -391,7 +391,7 @@ body {
         background: #00000055 !important;
         color: #e9eaff !important;
         line-height: 2em;
-        border-radius: 10px;
+        border-radius: 0px;
     }
     /*preview*/
     .code-block-wrap{

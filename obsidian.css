@@ -1,12 +1,22 @@
 @font-face {
     font-family: "MYuppy"; 
-    src: url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.eot"); 
-    src: url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.woff") format("woff"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/90be0e54cbefed03767a417320f0961c.svg#MYuppy-Bold-DDC") format("svg"); 
+    font-display: swap;
+    /* unicode-range: U+000-5FF; */
+    src: url("assets/MYuppy.woff");
+}
+/* latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 :root {
     /*--nice-font: "Segoe UI", "Myuppy";*/
-    --nice-font: "Myuppy", "Segoe Print";
+    --nice-font: "Myuppy", "Montserrat", "Roboto", "Segoe Print";
     --mono-font: "Source Code Pro", "Consolas";
 }
 
@@ -17,7 +27,7 @@
     --background-primary-alt: #06094059;
     --background-secondary: var(--bgcolor);
     --background-secondary-alt: #06094059;
-    --text-selection: #f997f154; 
+    --text-selection: #97a5f954; 
     --text-highlight-bg: var(--text-selection); /* search highlight */
     --text-normal: #ffffffdd;
     --text-muted: #efd1d1;
@@ -46,7 +56,11 @@
 
 .markdown-preview-view {
     font-size: 20px;
-    line-height: 1.7;
+    line-height: 1.8;
+}
+
+.cm-s-obsidian {
+    line-height: 1.8 !important;
 }
 
 /*main pane*/
@@ -241,6 +255,22 @@ body{
     color: var(--text-normal) !important;
 }
 
+/* bullet list vertical line */
+/* edit mode normal */
+.markdown-source-view.mod-cm6 .cm-indent::before {
+    border-right: 2px solid #b1bbff4a;
+}
+/* edit mode focus */
+.markdown-source-view.mod-cm6 .cm-active-indent::before {
+    border-color: #ff8a8a87;
+    border-width: 2px;
+}
+/* preview mode */
+.markdown-rendered.show-indentation-guide li > ul::before, .markdown-rendered.show-indentation-guide li > ol::before {
+    border-color: #b1bbff4a;
+    border-width: 2px;
+}
+
 /* popover */
     .menu, .popover, .suggestion-container {
         background-color: #150b55d6 !important;
@@ -260,7 +290,7 @@ body{
 
 body {
     /*font-family: "Baloo Paaji 2", Myuppy;*/
-    font-family: var(--nice-font);
+    font-family: var(--nice-font) !important;
 }
 .markdown-preview-view blockquote {
     font-family: var(--nice-font);    
@@ -339,13 +369,13 @@ body {
 
 /* preview mode width */
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-    max-width: 900px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 /* edit mode width */
 .markdown-source-view.is-readable-line-width .CodeMirror {
-    max-width: 900px;
+    max-width: 800px;
 }
 
 
@@ -386,6 +416,7 @@ body {
     }
 
 /*codeblock*/
+    /*live preview*/
     /*edit*/
     .cm-s-obsidian .HyperMD-codeblock{
         background: #00000055 !important;
@@ -422,7 +453,7 @@ body {
 }
 
 /*hiccup ----*/
-.markdown-preview-view hr {
+hr {
     border: none;
     border-top: 2px solid;
     border-color: #99c1ffcf;

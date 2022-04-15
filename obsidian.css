@@ -36,7 +36,11 @@
     --text-highlight-bg: #c9e7aba3;
 }
 
-
+/* preview font */
+.markdown-preview-view {
+    font-family: var(--nice-font);
+}
+/* edit or live preview font */
 .markdown-source-view.mod-cm6 .cm-scroller {
     font-family: var(--nice-font);
 }

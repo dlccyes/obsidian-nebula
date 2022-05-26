@@ -480,3 +480,12 @@ hr {
     border-top: 2px solid;
     border-color: #99c1ffcf;
 }
+
+/* table */
+table {
+    background: #ffffff3d;
+    border-radius: 20px;
+}
+.markdown-rendered th, .markdown-rendered td {
+    border: 2px solid #0000;
+}

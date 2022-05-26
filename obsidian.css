@@ -482,6 +482,9 @@ hr {
 }
 
 /* table */
+.cm-s-obsidian .HyperMD-table-row span.cm-hmd-table-sep {
+    color: #e09292e0;
+}
 table {
     background: #ffffff3d;
     border-radius: 20px;

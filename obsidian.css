@@ -15,9 +15,8 @@
 }
 
 :root {
-    /*--nice-font: "Segoe UI", "Myuppy";*/
-    --nice-font: "Myuppy", "Montserrat", "Roboto", "Segoe Print";
-    --mono-font: "Source Code Pro", "Consolas";
+    --nice-font: "Myuppy", "Montserrat", "Roboto", "Segoe Print", sans-serif;
+    --mono-font: "Source Code Pro", "Consolas", monospace;
 }
 
 .theme-dark{

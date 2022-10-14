@@ -179,6 +179,10 @@ img:not(.img-view) {
         background-color: var(--overlay-bg);
         padding: 5px 30px;
     }
+    /* left sidebar */
+    .vertical-tab-header {
+        background-color: #05033370;
+    }
     /*selected*/
     .horizontal-tab-nav-item.is-active, .vertical-tab-nav-item.is-active {
         /*background-color: var(--settings-blue)*/

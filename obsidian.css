@@ -174,10 +174,17 @@ img:not(.img-view) {
             /*background: #000;*/
         }
     /*background*/
+    .modal-bg {
+        background-color: #00000087;
+    }
     .horizontal-tab-content, .vertical-tab-content {
         /*background-color: var(--background-secondary-alt);*/
         background-color: var(--overlay-bg);
         padding: 5px 30px;
+    }
+    /* popup background */
+    .modal {
+        background-color: #0b0934ba;
     }
     /* left sidebar */
     .vertical-tab-header {
@@ -202,7 +209,6 @@ img:not(.img-view) {
     .checkbox-container.is-enabled{
         background-color: var(--settings-red-light) !important;
     }
-
 /*search*/
 .suggestion-item.is-selected {
     background-color: #404f7db5;

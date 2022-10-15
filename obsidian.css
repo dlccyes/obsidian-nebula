@@ -214,6 +214,11 @@ img:not(.img-view) {
     background-color: #404f7db5;
 }
 
+/* notifier popup */
+.notice {
+    background-color: #bf3737dd;
+}
+
 /*collapse icon*/
 .collapse-icon {
     color: #ffb3b39e;

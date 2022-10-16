@@ -33,6 +33,7 @@
     --interactive-accent: #b44949;
     --background-modifier-cover: rgb(0 0 0 / 70%);
     --text-highlight-bg: #c9e7aba3;
+    --list-marker-color: #ffd7d7; /* bullets & numbers */
 }
 
 /* preview font */
@@ -144,13 +145,13 @@ img:not(.img-view) {
     width: auto !important;
 }
 
-
 .theme-dark {
     --settings-red: #d0535375;
     --settings-blue: #7772d76e;
     --settings-red-light: var(--interactive-accent);
     --overlay-bg: #101f618a;
 }
+
 /*prompt i.e. search box*/ 
     .prompt{
         background-color: var(--overlay-bg);

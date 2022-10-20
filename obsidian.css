@@ -65,7 +65,6 @@ input.task-list-item-checkbox:checked {
     color: #ffffff91;
 }
 
-
 /*left sidebar*/
 .mod-left-split {
     background: #fff;
@@ -504,6 +503,10 @@ table {
     background: #ffffff3d;
     border-radius: 20px;
 }
+/* border */
 .markdown-rendered th, .markdown-rendered td {
-    border: 2px solid #0000;
+    border: 2px solid transparent;
+}
+.markdown-rendered thead tr > th {
+    border-color: transparent;
 }

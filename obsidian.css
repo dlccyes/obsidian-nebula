@@ -211,9 +211,9 @@ img:not(.img-view) {
     color: #ffb3b39e;
 }
 
-/*liver preview line number*/
+/*live preview line number*/
 .markdown-source-view.mod-cm6 .cm-gutters {
-    color: transparent !important;
+    color: #ffd2bcd6 !important;
     transition: all 200ms ease;
 }
 

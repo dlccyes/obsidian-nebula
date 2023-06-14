@@ -1,16 +1,9 @@
 # Nebula
 
-<details>
-  <summary>things to note</summary>
-  <br>
-  Note that this theme minimize the leftmost vertical bar, where the multiple options are at. The reason is that I rarely use them, except command palette and settings, which I can just use shortcut keys to access. If you don't like it, alter or comment the style with the CSS class <code>side-dock-ribbon</code>, <code>side-dock-ribbon-tab</code> and <code>side-dock-ribbon-action</code>.
-  <br><br>
-  The CSS file is also pretty well documented, so you'll know where to change if you're not satisfied at some part.
-</details>
+Note that this theme minimizes the leftmost vertical bar, where the multiple tools are at. The reason is that I don't use it at all as I use keyboard shortcuts and the command palette to access most things. If you need it, either overwrite it with custom CSS snippets (try altering classes with `side-dock-ribbon` as prefix) or use other themes instead.
 
-streamlined styles
-![](showcase1.png)
-![](showcase2.png)
+![](showcase1.jpg)
 
-translucent settings page
-![](showcase3.png)
+![](showcase2.jpg)
+
+![](showcase3.jpg)

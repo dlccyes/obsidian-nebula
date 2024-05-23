@@ -607,3 +607,15 @@ table {
 .markdown-rendered thead tr>th {
   border-color: transparent;
 }
+
+/* pdf plus */
+
+.popupMeta {
+  border-top: none;
+  background-color: #0d0444 !important;
+}
+
+.popupContent {
+  background-color: #0d0444;
+  color: var(--text-normal);
+}

@@ -420,9 +420,8 @@ body {
 
 .popover.hover-popover,
 .markdown-embed {
-  max-height: 600px;
+  max-height: 500px !important;
   height: 600px !important;
-  /*min-height: 600px;*/
   width: 500px;
 }
 
